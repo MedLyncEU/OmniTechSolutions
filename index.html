@@ -34,7 +34,7 @@
     a:hover { text-decoration: underline; }
     .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
     /* Navbar */
-    .nav { position: sticky; top: 0; z-index: 50; backdrop-filter: saturate(180%) blur(10px); background: rgba(11,16,32,.6); border-bottom: 1px solid rgba(255,255,255,.06); }
+    .nav { position: sticky; top: 0; z-index: 50; backdrop-filter: saturate(180%) blur(10px); background: rgba(11,16,32,1); border-bottom: 1px solid rgba(255,255,255,.06); }
     .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; }
     .logo { display: flex; align-items: center; gap: 12px; font-weight: 700; letter-spacing: .2px; }
     .logo svg { width: 34px; height: 34px; }
@@ -91,10 +91,10 @@
               <stop offset="100%" stop-color="#a855f7"/>
             </linearGradient>
           </defs>
-          <circle cx="32" cy="32" r="30" fill="none" stroke="url(#g)" stroke-width="4"/>
-          <path d="M20 32a12 12 0 0 1 24 0 12 12 0 0 1-24 0z" fill="none" stroke="url(#g)" stroke-width="4"/>
+          <img src="OTS Logo3.jpg" width="100" height="100" alt="Omni Technical Solutions SL" />
         </svg>
-        <span>Omni Technical Solutions S.L.</span>
+        <span style="color: white;"></spanstyle> Omni Technical Solutions S.L. <br>
+              Powering Innovation</span>
       </a>
       <div class="nav-links">
         <a href="#about" data-i18n="nav.about">About</a>
@@ -107,10 +107,9 @@
           <button id="lang-es" aria-pressed="false">ES</button>
         </span>
       </div>
-    </div>
-  </nav>
-
-  <!-- HERO  -->
+      </div>
+    </nav>
+  <!-- HERO -->
   <header class="hero container">
     <div class="eyebrow" data-i18n="hero.eyebrow">Holding Company</div>
     <h1 data-i18n="hero.title">We build intelligent platforms that solve real-world problems.</h1>
@@ -132,21 +131,21 @@
       <article class="card">
         <span class="badge" data-i18n="solutions.flagship">Flagship</span>
         <h3>MedLync</h3>
-        <p data-i18n="solutions.MedLync.desc">Elevates the Spanish healthcare ecosystem by integrating providers and operations into a single intelligent platform. Streamlines sourcing and compliance to drive strategic, data-led decisions.</p>
+        <p data-i18n="solutions.MedLync.desc">MedLync is OmniTech’s flagship healthcare operations platform, purpose-built to elevate how Spanish healthcare providers manage their workforce. By connecting clinics, hospitals, and surgical centers with qualified practitioners in a single intelligent ecosystem, MedLync streamlines talent sourcing, shift scheduling, and regulatory compliance—empowering providers to operate more efficiently with analytics at the core.</p>
         <a href="#contact" class="btn" aria-label="Contact about MedLync" data-i18n="solutions.MedLync.cta">Request a demo</a>
       </article>
       <!-- Placeholder for future solution 1 -->
       <article class="card">
         <span class="badge" data-i18n="solutions.coming">Coming soon</span>
         <h3 data-i18n="solutions.future1.title">SupplySense</h3>
-        <p data-i18n="solutions.future1.desc">AI-powered inventory planning to reduce waste, prevent shortages, and optimize purchasing across facilities.</p>
+        <p data-i18n="solutions.future1.desc">SupplySense is an AI-driven inventory solution that helps healthcare facilities better manage medical supplies. It predicts usage to cut waste, prevents shortages with real-time alerts, and improves purchasing through smarter ordering patterns. With built-in analytics and simple integration, SupplySense enables clinics, hospitals, and surgical centers to maintain proper stock, control costs, and support continuous patient care.</p>
         <a href="#contact" class="btn" data-i18n="solutions.future.cta">Join the waitlist</a>
       </article>
       <!-- Placeholder for future solution 2 -->
       <article class="card">
         <span class="badge" data-i18n="solutions.coming">Coming soon</span>
         <h3 data-i18n="solutions.future2.title">InsightHub</h3>
-        <p data-i18n="solutions.future2.desc">Unified data ingestion & analytics fabric to connect siloed systems and deliver a 360° view for decision-makers.</p>
+        <p data-i18n="solutions.future2.desc">InsightHub is a unified data and analytics layer that centralizes operational, clinical, and administrative information to eliminate system silos. By connecting platforms and standardizing data into a full 360° view, InsightHub supports faster and more informed decisions. With automated ingestion, real-time dashboards, and built-in analytics, it becomes a core tool for planning, performance improvement, and operational efficiency across healthcare providers.</p>
         <a href="#contact" class="btn" data-i18n="solutions.future.cta">Join the waitlist</a>
       </article>
     </div>
@@ -159,8 +158,9 @@
     </div>
     <div class="grid">
       <article class="card" style="grid-column: span 12;">
-        <h3 data-i18n="about.mission.title">Our mission</h3>
-        <p data-i18n="about.mission.body">To build practical, human-centered technology that makes operations simpler and outcomes better. We focus on high-impact domains where intelligent automation creates real value.</p>
+        <h3 data-i18n="about.mission.title">Omni Technical Solutions — Mission (AI-Driven)</h3>
+        <p data-i18n="about.mission.body">Our mission is to design, develop, and scale high-impact technology solutions that help organizations operate with greater efficiency, intelligence, and security. 
+          As a technology holding company, we leverage artificial intelligence, automation, and modern architectures to build trusted, scalable, and outcome-driven products—creating sustainable value for our customers, partners, and investors.</p>
         <h3 data-i18n="about.values.title">Values</h3>
         <ul class="muted">
           <li data-i18n="about.values.1">Put people first</li>
@@ -181,7 +181,7 @@
     <div class="grid">
       <article class="card">
         <h3 data-i18n="news.item1.title">Omni launches MedLync pilot</h3>
-        <p class="small" data-i18n="news.item1.meta">Press • Q1 2026</p>
+        <p class="small" data-i18n="news.item1.meta">Press • Q3 2025</p>
         <p class="muted" data-i18n="news.item1.body">We’re partnering with select providers to validate scheduling, staffing, and supply workflows before wider rollout.</p>
       </article>
       <article class="card">
@@ -196,6 +196,44 @@
       </article>
     </div>
   </section>
+
+
+  <!-- Founders -->
+  <section id="Founders" class="container">
+    <div class="section-head">
+      <h2 data-i18n="Founders.title">Founders</h2>
+      <p class="muted" data-i18n="Founders.subtitle"></p>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <h3 data-i18n="Founders.item1.title">Vanessa Acosta – Co-Founder & Head of Sales & Marketing</h3>
+        <!-- Picture goes here -->
+        <p class="muted" data-i18n="Founders.item1.body">Sales and marketing leader with a strong track record of building brands, driving go-to-market strategy, 
+          and accelerating growth for technology-driven organizations. She brings a customer-centric mindset, combining market insight, storytelling, and data-driven 
+          strategy to position solutions clearly and effectively. At Omni Technical Solutions, She leads commercial strategy, partnerships, and brand development, 
+          ensuring that innovation is translated into clear value for customers and investors alike. She is passionate about creating strong market presence, fostering 
+          strategic relationships, and driving sustainable, scalable growth.</p>
+      </article>
+      <article class="card">
+        <h3 data-i18n="Founders.item2.title">Jagath De Silva – Co-Founder & Managing Partner</h3>
+         <!-- Picture goes here -->
+        <p class="muted" data-i18n="Founders.item2.body">Seasoned strategy, innovation, and technology leader with over 25 years of experience guiding organizations 
+          through complex digital and operational transformations. Known for bridging the gap between business strategy, technology, and people, he brings a pragmatic 
+          leadership approach focused on execution, scalability, and measurable outcomes. At Omni Technical Solutions, Jagath drives technology vision, governance, 
+          and innovation, helping organizations align IT strategy with business goals while leveraging modern architectures, automation, and AI to improve efficiency,
+           resilience, and customer experience across global and multi-industry environments.</p>
+      </article>
+      <article class="card">
+        <h3 data-i18n="Founders.item3.title">John Laguna – Co-Founder & Managing Partner</h3>
+        <!-- Picture goes here -->
+        <p class="muted" data-i18n="Founders.item3.body">Senior Analytics & AI leader with over two decades of experience building and scaling data-driven platforms 
+          that enable organizations to operate smarter, faster, and with greater confidence. His expertise spans analytics strategy, data engineering, AI innovation, 
+          and operational transformation, with a strong focus on turning complex data environments into practical, business-ready solutions. At Omni Technical Solutions, 
+          He leads the vision for intelligent platforms that connect technology, operations, and decision-making—helping organizations move beyond reporting to create sustainable, AI-enabled capabilities that drive long-term value and growth.</p>
+      </article>
+    </div>
+  </section>
+
 
   <!-- CAREERS -->
   <section id="careers" class="container">
@@ -239,19 +277,6 @@
   <footer>
     <div class="container cols">
       <div class="col">
-        <div class="logo" style="margin-bottom:8px;">
-          <svg viewBox="0 0 64 64" aria-hidden="true" role="img" style="width:28px;height:28px;">
-            <defs>
-              <linearGradient id="g2" x1="0" x2="1">
-                <stop offset="0%" stop-color="#4cc9f0"/>
-                <stop offset="100%" stop-color="#a855f7"/>
-              </linearGradient>
-            </defs>
-            <circle cx="32" cy="32" r="30" fill="none" stroke="url(#g2)" stroke-width="4"/>
-            <path d="M20 32a12 12 0 0 1 24 0 12 12 0 0 1-24 0z" fill="none" stroke="url(#g2)" stroke-width="4"/>
-          </svg>
-          <span>Omni Technical Solutions S.L.</span>
-        </div>
         <p class="small" data-i18n="footer.copy">© <span id="year"></span> Omni Technical Solutions S.L. All rights reserved.</p>
       </div>
       <div class="col">
@@ -274,9 +299,10 @@
       en: {
         nav: { about: 'About', solutions: 'Solutions', news: 'News', careers: 'Careers', contact: 'Contact' },
         hero: { eyebrow: 'Holding Company', title: 'We build intelligent platforms that solve real-world problems.', lead: 'Omni Technical Solutions S.L. is a Spain-based holding company creating AI-powered products across industries. MedLync is our flagship healthcare solution—designed to connect providers and optimize operations.', cta1: 'Explore Solutions', cta2: 'Partner with Us' },
-        solutions: { title: 'Solutions', subtitle: 'Scalable platforms with modular architecture—so each product can grow independently.', flagship: 'Flagship', coming: 'Coming soon', MedLync: { desc: 'Elevates the Spanish healthcare ecosystem by integrating providers and operations into a single intelligent platform. Streamlines sourcing and compliance to drive strategic, data-led decisions.', cta: 'Request a demo' }, future: { cta: 'Join the waitlist' }, future1: { title: 'SupplySense', desc: 'AI-powered inventory planning to reduce waste, prevent shortages, and optimize purchasing across facilities.' }, future2: { title: 'InsightHub', desc: 'Unified data ingestion & analytics fabric to connect siloed systems and deliver a 360° view for decision-makers.' } },
-        about: { title: 'About Omni', mission: { title: 'Our mission', body: 'To build practical, human-centered technology that makes operations simpler and outcomes better. We focus on high-impact domains where intelligent automation creates real value.' }, values: { title: 'Values', 1: 'Put people first', 2: 'Ship fast, improve continuously', 3: 'Design for scale and security', 4: 'Measure impact, not hype' } },
-        news: { title: 'News & Insights', subtitle: 'Company updates, product milestones, and industry insights.', item1: { title: 'Omni launches MedLync pilot', meta: 'Press • Q1 2026', body: 'We’re partnering with select providers to validate scheduling and staffing workflows before wider rollout.' }, item2: { title: 'Hiring: Founding engineers', meta: 'Careers • Ongoing', body: 'We’re looking for pragmatic builders with experience in data platforms, integrations, and security.' }, item3: { title: 'Omni at regional health tech events', meta: 'Events • 2025', body: 'Meet our team to discuss partnerships and pilots in Spain and beyond.' } },
+        solutions: { title: 'Solutions', subtitle: 'Scalable platforms with modular architecture—so each product can grow independently.', flagship: 'Flagship', coming: 'Coming soon', MedLync: { desc: 'MedLync is OmniTech’s flagship healthcare operations platform, purpose-built to elevate how Spanish healthcare providers manage their workforce. By connecting clinics, hospitals, and surgical centers with qualified practitioners in a single intelligent ecosystem, MedLync streamlines talent sourcing, shift scheduling, and regulatory compliance—empowering providers to operate more efficiently with analytics at the core.', cta: 'Request a demo' }, future: { cta: 'Join the waitlist' }, future1: { title: 'SupplySense', desc: 'SupplySense is an AI-driven inventory solution that helps healthcare facilities better manage medical supplies. It predicts usage to cut waste, prevents shortages with real-time alerts, and improves purchasing through smarter ordering patterns. With built-in analytics and simple integration, SupplySense enables clinics, hospitals, and surgical centers to maintain proper stock, control costs, and support continuous patient care.' }, future2: { title: 'InsightHub', desc: 'InsightHub is a unified data and analytics layer that centralizes operational, clinical, and administrative information to eliminate system silos. By connecting platforms and standardizing data into a full 360° view, InsightHub supports faster and more informed decisions. With automated ingestion, real-time dashboards, and built-in analytics, it becomes a core tool for planning, performance improvement, and operational efficiency across healthcare providers.' } },
+        about: { title: 'About Omni', mission: { title: 'Our mission', body: 'Our mission is to design, develop, and scale high-impact technology solutions that help organizations operate with greater efficiency, intelligence, and security. 
+          As a technology holding company, we leverage artificial intelligence, automation, and modern architectures to build trusted, scalable, and outcome-driven products—creating sustainable value for our customers, partners, and investors.' },  values: { title: 'Values', 1: 'Put people first', 2: 'Ship fast, improve continuously', 3: 'Design for scale and security', 4: 'Measure impact, not hype' } },
+        news: { title: 'News & Insights', subtitle: 'Company updates, product milestones, and industry insights.', item1: { title: 'Omni launches MedLync pilot', meta: 'Press • Q4 2025', body: 'We’re partnering with select providers to validate scheduling and staffing workflows before wider rollout.' }, item2: { title: 'Hiring: Founding engineers', meta: 'Careers • Ongoing', body: 'We’re looking for pragmatic builders with experience in data platforms, integrations, and security.' }, item3: { title: 'Omni at regional health tech events', meta: 'Events • 2025', body: 'Meet our team to discuss partnerships and pilots in Spain and beyond.' } },
         careers: { title: 'Careers', subtitle: 'Join a small, senior team building products that matter.', role1:'Founding Full‑Stack Engineer (TypeScript/Node/React)', role2:'Solutions Engineer (Integrations, ETL, HL7/FHIR a plus)', role3:'Product Designer (Design systems, accessibility)', note: 'Don’t see your role? Send us a note with what you’d like to build.', cta: 'Introduce yourself' },
         contact: { title: 'Contact', subtitle: 'Tell us about your organization and what you’d like to improve.', form: { name:'Name', email:'Email', message:'Message', cta:'Send message' }, thanks: 'Thanks! We will get back to you shortly.' },
         footer: { copy: '© {year} Omni Technical Solutions S.L. All rights reserved.', office: 'Registered Office', reg: 'CIF / NIF pending', links: 'Quick Links' }
@@ -284,9 +310,9 @@
       es: {
         nav: { about: 'Quiénes somos', solutions: 'Soluciones', news: 'Noticias', careers: 'Carreras', contact: 'Contacto' },
         hero: { eyebrow: 'Empresa Holding', title: 'Creamos plataformas inteligentes que resuelven problemas reales.', lead: 'Omni Technical Solutions S.L. es una empresa holding con sede en España que crea productos impulsados por IA en distintos sectores. MedLync es nuestra solución sanitaria insignia, diseñada para conectar proveedores y optimizar la operación.', cta1: 'Ver soluciones', cta2: 'Colabora con nosotros' },
-        solutions: { title: 'Soluciones', subtitle: 'Plataformas escalables con arquitectura modular para que cada producto crezca de forma independiente.', flagship: 'Insignia', coming: 'Próximamente', MedLync: { desc: 'Eleva el ecosistema sanitario español integrando proveedores y operaciones en una plataforma inteligente. Optimiza la captación de talento y el cumplimiento para impulsar decisiones estratégicas.', cta: 'Solicitar demo' }, future: { cta: 'Únete a la lista de espera' }, future1: { title: 'SupplySense', desc: 'Planificación de inventario con IA para reducir desperdicio, evitar faltantes y optimizar compras entre centros.' }, future2: { title: 'InsightHub', desc: 'Capa unificada de ingesta de datos y analítica para conectar sistemas aislados y ofrecer una vista 360° para la toma de decisiones.' } },
+        solutions: { title: 'Soluciones', subtitle: 'Plataformas escalables con arquitectura modular para que cada producto crezca de forma independiente.', flagship: 'Insignia', coming: 'Próximamente', MedLync: { desc: 'MedLync es la plataforma insignia de operaciones sanitarias de OmniTech, diseñada específicamente para elevar la forma en que los proveedores de salud en España gestionan su personal clínico. Al conectar clínicas, hospitales y centros quirúrgicos con profesionales cualificados en un ecosistema inteligente, MedLync optimiza la captación de talento, la planificación de turnos y el cumplimiento normativo, permitiendo a los proveedores operar con mayor eficiencia gracias a la analítica como base.', cta: 'Solicitar demo' }, future: { cta: 'Únete a la lista de espera' }, future1: { title: 'SupplySense', desc: 'SupplySense es una solución de inventario con IA que ayuda a los centros sanitarios a gestionar mejor sus suministros médicos. Predice el consumo para reducir desperdicios, evita desabastecimientos con alertas en tiempo real y mejora las compras mediante patrones de pedido más eficientes. Con analítica integrada e implementación sencilla, SupplySense permite a clínicas, hospitales y centros quirúrgicos mantener el stock adecuado, controlar costes y asegurar la continuidad asistencial.' }, future2: { title: 'InsightHub', desc: 'InsightHub es una capa unificada de datos y analítica que centraliza información operativa, clínica y administrativa para eliminar silos entre sistemas. Al conectar plataformas y estandarizar datos en una vista 360°, InsightHub permite decisiones más rápidas y mejor fundamentadas. Con ingesta automatizada, paneles en tiempo real y analítica integrada, se convierte en una herramienta clave para la planificación, la mejora del rendimiento y la eficiencia operativa en centros sanitarios.' } },
         about: { title: 'Sobre Omni', mission: { title: 'Nuestra misión', body: 'Construir tecnología práctica y centrada en las personas que simplifique las operaciones y mejore los resultados. Nos enfocamos en ámbitos de alto impacto donde la automatización inteligente genera valor real.' }, values: { title: 'Valores', 1: 'Las personas primero', 2: 'Entregar rápido y mejorar continuamente', 3: 'Diseñar para escala y seguridad', 4: 'Medir impacto, no humo' } },
-        news: { title: 'Noticias y artículos', subtitle: 'Actualizaciones de la empresa, hitos de producto e ideas del sector.', item1: { title: 'Omni lanza el piloto de MedLync', meta: 'Prensa • T1 2026', body: 'Colaboramos con proveedores seleccionados para validar flujos de planificación, personal antes del lanzamiento general.' }, item2: { title: 'Estamos contratando: Ingenieros fundadores', meta: 'Carreras • Abierto', body: 'Buscamos personas prácticas con experiencia en plataformas de datos, integraciones y seguridad.' }, item3: { title: 'Omni en eventos regionales de health tech', meta: 'Eventos • 2025', body: 'Conoce al equipo para hablar de alianzas y pilotos en España y más allá.' } },
+        news: { title: 'Noticias y artículos', subtitle: 'Actualizaciones de la empresa, hitos de producto e ideas del sector.', item1: { title: 'Omni lanza el piloto de MedLync', meta: 'Prensa • T4 2025', body: 'Colaboramos con proveedores seleccionados para validar flujos de planificación, personal antes del lanzamiento general.' }, item2: { title: 'Estamos contratando: Ingenieros fundadores', meta: 'Carreras • Abierto', body: 'Buscamos personas prácticas con experiencia en plataformas de datos, integraciones y seguridad.' }, item3: { title: 'Omni en eventos regionales de health tech', meta: 'Eventos • 2025', body: 'Conoce al equipo para hablar de alianzas y pilotos en España y más allá.' } },
         careers: { title: 'Carreras', subtitle: 'Únete a un equipo pequeño y sénior que construye productos con impacto.', role1:'Ingeniero/a Full‑Stack fundador/a (TypeScript/Node/React)', role2:'Ingeniero/a de Soluciones (Integraciones, ETL, HL7/FHIR deseable)', role3:'Diseñador/a de Producto (Sistemas de diseño, accesibilidad)', note: '¿No ves tu rol? Escríbenos y cuéntanos qué te gustaría construir.', cta: 'Preséntate' },
         contact: { title: 'Contacto', subtitle: 'Cuéntanos sobre tu organización y qué te gustaría mejorar.', form: { name:'Nombre', email:'Correo', message:'Mensaje', cta:'Enviar mensaje' }, thanks: '¡Gracias! Te responderemos en breve.' },
         footer: { copy: '© {year} Omni Technical Solutions S.L. Todos los derechos reservados.', office: 'Sede social', reg: 'CIF / NIF pendiente', links: 'Enlaces' }
